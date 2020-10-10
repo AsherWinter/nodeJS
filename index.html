@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+    <link rel="Style" href="Style.css">
+    
+     
+    <script>
+        getData();
+        getDataForCountries();
+        setInterval(() => {
+            getData();
+        }, 5000);
+        
+    </script>
+    <style>
+        body {
+            background-color: powderblue;
+            text-align: center;
+        }
+        h1   {color: red;
+            text-align: center;
+        }
+        p    {color: red;}
+
+        </style>
+</head>
+<body >
+    <h1>
+       Corona counter
+    </h1>
+    <hr>
+    <select id="counteries">
+    </select>
+
+    <br>
+    <input type="number" id="cases"> <button onclick="updateCounter()">Update the Counter number</button>
+    <hr>
+    <div >
+        <table id="table" border="2px">
+            <thead>
+                <tr>
+                    <td>
+                        Country        
+                    </td>
+                    <td>
+                        Population       
+                    </td>
+                    <td>
+                        Corona Counter   
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    
+    
+</body>
+</html>
